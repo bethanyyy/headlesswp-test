@@ -1,6 +1,7 @@
 import React from "react";
 import { fetcher } from "../../lib/fetcher";
 import { ALL_POSTS_SLUGS, POST_BY_SLUG } from "../../lib/wordpress/api";
+import Image from "next/image";
 
 const Post = ({ postData }) => {
   const { title, content, date, featuredImage } = postData;
