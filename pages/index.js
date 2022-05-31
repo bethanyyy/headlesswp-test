@@ -16,6 +16,7 @@ export default function Home() {
         <a className="underline hover:text-red-400">Go to blog</a>
       </Link>
       <p className="text-blue-200">Test Github Push Pull</p>
+      <p className="text-green-500">Test Github branch</p>
     </div>
   );
 }
