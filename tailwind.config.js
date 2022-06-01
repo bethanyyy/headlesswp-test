@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        nekogray: "#EBEBEB",
+        nekopurple: "#9498e1",
+        nekopink: "#fd88fd",
+      },
+    },
   },
   plugins: [],
 };

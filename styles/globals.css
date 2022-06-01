@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply h-full;
+  }
+  body,
+  body > div:first-child,
+  div#__next {
+    @apply h-full;
+  }
+  /* footer {
+    @apply mt-auto bg-blue-300 p-10;
+  } */
+}
+
 html,
 body {
   padding: 0;
