@@ -7,7 +7,7 @@ const blog = ({ allPosts }) => {
   return (
     <div className="container">
       <main className="main">
-        <div className="grid">
+        <div className="grid-original">
           {allPosts?.map((post) => (
             <div key={post.slug} className="card">
               <h3>{post.title}</h3>

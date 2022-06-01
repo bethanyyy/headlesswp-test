@@ -86,7 +86,7 @@ a {
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+.grid-original {
   display: flex;
   align-items: center;
   justify-content: center;

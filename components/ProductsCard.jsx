@@ -4,11 +4,13 @@ const ProductsCard = ({ product }) => {
   const { name, shortDescription, image, price } = product.node;
 
   return (
-    <div>
-      <img src={image.sourceUrl} alt="" />
-      <p>{name}</p>
-      <p>{shortDescription}</p>
-      <p>{price ? price : "Free!"}</p>
+    <div className="bg-teal-200 border-4 border-orange-300 rounded-md overflow-hidden">
+      <img src={image.sourceUrl} alt="" className="w-full h-40 object-cover" />
+      <div className="p-2">
+        <p className="font-bold">{name}</p>
+        {/* <p>{shortDescription}</p> */}
+        <p>{price ? price : "Free!"}</p>
+      </div>
     </div>
   );
 };
