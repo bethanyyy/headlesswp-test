@@ -15,8 +15,16 @@ export default function Home() {
       <Link href={"/blog"}>
         <a className="underline hover:text-red-400">Go to blog</a>
       </Link>
+      <p></p>
+      <Link href={"/first_page"}>
+        <a className="underline hover:text-red-900">Go to page 1</a>
+      </Link>
       <p className="text-blue-200">Test Github Push Pull</p>
       <p className="text-green-500">Test Github branch</p>
+      <p></p>
+      <Link href={"/second_page"}>
+        <a className="underline shadow-md">See Products</a>
+      </Link>
     </div>
   );
 }

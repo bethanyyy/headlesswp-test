@@ -25,6 +25,7 @@ const blog = ({ allPosts }) => {
 
 export const getStaticProps = async () => {
   const response = await fetcher(ALL_POSTS);
+  console.log(response);
   const allPosts = response.data.posts.edges.map(({ node }) => node);
 
   console.log(allPosts);
