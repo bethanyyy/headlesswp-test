@@ -1,15 +1,13 @@
 import React from "react";
+import Header from "./Header";
 import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
     <div className="container mx-auto">
-      <header className="flex justify-between">
-        <p>header</p>
-        <Link href={"/"}>&gt;Homepage&lt;</Link>
-      </header>
+      <Header/>
       <main className="">{children}</main>
-      <footer>footer</footer>
+      <footer className="bg-slate-900 p-6">footer</footer>
     </div>
   );
 };

@@ -15,16 +15,28 @@ export default function Home() {
       <Link href={"/blog"}>
         <a className="underline hover:text-red-400">Go to blog</a>
       </Link>
-      <p></p>
-      <Link href={"/first_page"}>
-        <a className="underline hover:text-red-900">Go to page 1</a>
-      </Link>
       <p className="text-blue-200">Test Github Push Pull</p>
       <p className="text-green-500">Test Github branch</p>
-      <p></p>
+      
+      <br></br>
+      <Link href={"/first_page"}>
+        <a className="hover:bg-blue-900 hover:text-white">Go to first page</a>
+      </Link>
+      <br></br>
       <Link href={"/second_page"}>
-        <a className="underline shadow-md">See Products</a>
+        <a className="hover:bg-blue-900 hover:text-white">Go to second page</a>
+      </Link>
+      <br></br><br></br>
+      <p>Page#3:</p>
+      <Link href={"/page3"}>
+        <img src="https://picsum.photos/200" className="hover:cursor-pointer rounded-lg"></img>
+      </Link>
+      
+      <br></br>
+      <Link href={"/page4"}>
+        <a className="hover:bg-blue-900 hover:text-white"> &gt;&gt;&shy;404 NOT FOUND&shy;&lt;&lt; </a>
       </Link>
     </div>
+    
   );
 }

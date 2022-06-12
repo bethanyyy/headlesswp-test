@@ -16,8 +16,10 @@ const second_page = ({allProducts}) =>{ // display
                 <div className="grid">
                     {products.map((product)=>{
                         return(
-                            <div className="p-5 w-full md:w-1/3" key={product.slug}>
-                                <img className="rounded-lg hover:scale-125 overflow-hidden" src={product.image.sourceUrl} alt=""/>
+                            <div className="p-5 w-1/3" key={product.slug}>
+                                <div className="container overflow-hidden">
+                                    <img className="rounded-lg hover:scale-125" src={product.image.sourceUrl} alt=""/>
+                                </div>
                                 <p className="text-blue-300 text-xs ">{product.type}</p>
                                 <h3 className="hover:text-white text-blue-200">{product.name}</h3>
                                 <div className="text-blue-800 bg-gray-300" dangerouslySetInnerHTML={{__html:product.description}}/>

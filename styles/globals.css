@@ -129,9 +129,23 @@ a {
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.product-small img:hover {
+  transform: scale(2);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+.not-found {
+  background-color: #1e293b;
+  padding: 2.5rem;
+  color:#fafafa;
+  padding-bottom: 20rem;
+}
+.not-found a{
+  color:#0070f3;
+  text-decoration: underline;
+}
+.not-found h1{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
