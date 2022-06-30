@@ -1,5 +1,5 @@
-import { fetcher } from "../lib/fetcher";
-import { PRODUCT_QUERY } from "../lib/wordpress/api"; // query method from api
+import { fetcher } from "../../lib/fetcher";
+import { PRODUCT_QUERY } from "../../lib/wordpress/api"; // query method from api
 import Link from "next/link"; // can send user to next link
 
 const page3 = ({allProducts}) =>{ // display
@@ -58,13 +58,17 @@ const page3 = ({allProducts}) =>{ // display
                         <div className="mt-8 lg:grid grid-cols-3 gap-6">
                             {products.map((product)=>{
                                 return(
-                                    <div key={product.slug}>
+                                    <div key={product.id}>
                                         <div className="bg-slate-400 rounded overflow-hidden shadow-md relative">
-                                            <div className="overflow-hidden">
-                                                <img src={product.image.sourceUrl} alt="" className="w-full h-36 object-cover hover:scale-125 duration-500"/>
-                                            </div>
+                                            <Link href={'/product/' + product.slug}>
+                                                <div className="overflow-hidden">
+                                                    <img src={product.image.sourceUrl} alt="" className="w-full h-36 object-cover hover:scale-125 duration-500"/>
+                                                </div>
+                                            </Link>
                                             <div className="m-4">
                                                 <span>{product.name}</span>
+                                                <br></br>
+                                                <span>{product.price}</span>
                                                 <span className="font-light block text-xs" dangerouslySetInnerHTML={{__html:product.description}}></span>
                                             </div>
                                             <div>

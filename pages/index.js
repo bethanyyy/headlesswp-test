@@ -23,12 +23,12 @@ export default function Home() {
         <a className="hover:bg-blue-900 hover:text-white">Go to first page</a>
       </Link>
       <br></br>
-      <Link href={"/second_page"}>
+      <Link href={"/product/second_page"}>
         <a className="hover:bg-blue-900 hover:text-white">Go to second page</a>
       </Link>
       <br></br><br></br>
       <p>Page#3:</p>
-      <Link href={"/page3"}>
+      <Link href={"/product/page3"}>
         <img src="https://picsum.photos/200" className="hover:cursor-pointer rounded-lg"></img>
       </Link>
       
